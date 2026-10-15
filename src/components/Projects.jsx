@@ -24,17 +24,17 @@ const Projects = () => {
         }
     ]
   return (
-    <div className='Container flex justify-center h-screen py-20 '>
+    <div className='Container flex justify-center py-20 px-4'>
       <div className='flex flex-col items-center text-center'>
         {/**Center Content */}
-        <h1 className='w-70 h-22 font-["Manrope"] font-semibold text-[36px] text-[#3B3B3B]'>Our Latest work</h1>
-        <p className='w-127.25 h-15.75 text-[#8A8E9B] font-["Manrope"] font-semibold text-[16px]'>Browse our portfolio of innovative digital projects that showcase creativity, performance, and results.</p>
-      <div className='py-20 '>
+        <h1 className='mb-4 font-["Manrope"] font-semibold text-[36px] text-[#3B3B3B]'>Our Latest work</h1>
+        <p className='w-full max-w-127.25 text-[#8A8E9B] font-["Manrope"] font-semibold text-[16px]'>Browse our portfolio of innovative digital projects that showcase creativity, performance, and results.</p>
+      <div className='py-20 w-full max-w-5xl'>
         {/**Cards */}
         <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
             {Services.map((item)=>(
-                <li key={item.id}>
-                    <img src={item.image} className='w-[320px] h-54.25 rounded-lg' />
+                <li key={item.id} className='flex flex-col items-center gap-2'>
+                    <img src={item.image} className='w-full max-w-[320px] h-54.25 object-cover rounded-lg' />
                     <h1 className='font-bold font-["Manrope"] text-[16px] text-[#3B3B3B] '>{item.title}</h1>
                     <p className='font-["Manrope"] text-[12px] text-[#828282]  text-center'>{item.content}</p>
                 </li>
