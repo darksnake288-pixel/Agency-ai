@@ -24,7 +24,7 @@ const Footer = () => {
             </p>
 
             {/* Nav Links */}
-            <ul className="flex items-center gap-6 pt-2">
+            <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2">
               <li>
                 <a href="#" className="text-[#374151] font-medium text-sm hover:text-[#5044E5] transition-colors">
                   Home
@@ -58,7 +58,7 @@ const Footer = () => {
             </p>
 
             {/* Input & Button */}
-            <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-3">
+            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col sm:flex-row sm:items-center gap-3">
               <input
                 type="email"
                 placeholder="Enter your email"
